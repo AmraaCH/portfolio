@@ -65,8 +65,8 @@ function Project({ id, navTabs }: TabsPropsT) {
                 title={item.title}
                 subject={item.subject}
                 tag={item.tag}
-                imgurl={item.imgurl}
-                giturl={item.giturl}
+                // imgurl={item.imgurl}
+                // giturl={item.giturl}
                 depoloyurl={item.depoloyurl}
               />
             ))}

@@ -108,12 +108,12 @@ function ProjectCard({ title, subject, tag, imgurl, name, giturl, depoloyurl }: 
       <HoverBox>
         <Tit>{title}</Tit>
         <BtnBox>
-          <Button onClick={() => openModal(name)}>자세히 보기</Button>
+          <Button onClick={() => openModal(name)}>Details</Button>
           {giturl &&
-            <Button onClick={() => window.open(giturl)}>Github 바로가기</Button>
+            <Button onClick={() => window.open(giturl)}>Go to Github</Button>
           }
           {depoloyurl &&
-            <Button onClick={() => window.open(depoloyurl)}>사이트 바로가기</Button>
+            <Button onClick={() => window.open(depoloyurl)}>Go to Site</Button>
           }
         </BtnBox>
       </HoverBox>

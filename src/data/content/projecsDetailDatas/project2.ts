@@ -1,64 +1,64 @@
 export const project2 = {
-  name: 'hancom',
-  pointcolor: 'before:bg-[#0b4da1]',
-  title: 'IT 온라인 수강 사이트',
+  name: 'shift-scheduler',
+  pointcolor: 'before:bg-[#4a90e2]',
+  title: 'Shift Scheduler Web App',
   subtext:
-    'IT융합 전문 교육센터로 기존 홈페이지를 새롭게 리뉴얼된 홈페이지입니다.\n클라이언트가 제공한 기획서 및 디자인을 확인하고 요구 사항을 참고하여 작업 했습니다.',
-  data: '2022 - 약 6개월',
-  team: '기여도 70%',
-  tag: ['장기', '반응형', '퍼블리싱'],
-  depoloyurl: 'https://online.hancomacademy.com/',
+    'A web-based scheduling tool tailored for Oyu Tolgoi\'s employee shift management. The app automatically generates monthly work schedules based on uploaded Excel files. It considers factors such as employee availability, paid leave, and fairness in shift distribution.',
+  data: '2025 - 1 month',
+  team: 'Solo project',
+  tag: ['automation', 'Streamlit', 'Python', 'Excel'],
+  depoloyurl: '', // Add if deployed online
   tools: [
     {
-      title: 'HTML',
-      detail: '웹 페이지의 구조를 HTML로 마크업하여 웹 표준을 준수하고, 웹 접근성을 고려하며 작업했습니다.',
+      title: 'Python',
+      detail: 'Used to build the logic for shift distribution, data validation, and Excel export.',
     },
     {
-      title: 'CSS',
-      detail: 'CSS를 활용하여 각 요소에 일관된 스타일링을 적용하여 사용자 경험을 향상시켰습니다.',
+      title: 'Pandas',
+      detail: 'Utilized for data manipulation, including parsing employee info and generating structured schedules.',
     },
     {
-      title: 'jQuery',
-      detail:
-        'jQuery는 자바스크립트 언어를 단순화시켜 개발을 편리하게 할 수 있도록 도와주는 오픈 소스 기반의 자바스크립트 라이브러리입니다.',
+      title: 'Streamlit',
+      detail: 'Enabled quick deployment of a modern and user-friendly web UI for file upload, settings, and downloads.',
+    },
+    {
+      title: 'Excel',
+      detail: 'The final schedule is exported as an Excel file for practical use in the workplace.',
     },
   ],
   featinfo: [],
   parts: [
     {
-      title: '원활한 커뮤니케이션을 위한 담당자와의 직접적인 소통',
+      title: 'Automated shift scheduling based on Excel input',
       detailList: [
-        `요구사항 등을 정확히 파악하고 이해하기 위해 직접 소통하며 일정과 요구사항을 체크`,
-        `개선 사항 등 피드백을 받았을 때 열린 마음으로 수용하고, 더 나은 방향으로 제안하여 프로젝트를 구체화`,
+        'Developed a script that reads employee data from an Excel file and creates a fair shift schedule.',
+        'Supports monthly shift planning for small to medium teams.',
       ],
     },
     {
-      title: '협업 툴을 활용한 프론트엔드 개발자와의 커뮤니케이션',
+      title: 'Modern and intuitive UI using Streamlit',
       detailList: [
-        `\`Google Sheets\`를 활용해 진행도, 주요사항 등 작업 현황 및 일정 공유`,
-        `클라이언트의 요구사항을 시각화 해 전달하면서 요구사항을 명확하게 전달하고 주기적인 회의를 통해 개선`,
+        'Created a clean UI that allows users to upload files and download the final schedule without dealing with code.',
+        'UI is entirely in English to support global teams.',
       ],
     },
     {
-      title: '디자인 시안이 없던 기타 페이지 디자인 (PC, Mobile)',
+      title: 'Fair and balanced shift algorithm',
       detailList: [
-        `디자인 시안을 받지 못한 기타 페이지 디자인을 담당`,
-        `이미 디자인되어 있던 기존 페이지와의 일관성을 유지하도록 노력`,
+        'Ensures fair rotation among employees, avoiding overworking and respecting leave policies.',
+        'Flexible to add constraints like days off and special shift rules (e.g. holidays).',
       ],
     },
     {
-      title: '기존 적응형 웹 업무 방식을 반응형 웹 도입을 주도하여 업무 환경 개선',
+      title: 'No local file output – cloud download only',
       detailList: [
-        `적응형 웹 방식으로 작업하던 업무 환경에서, 이번 프로젝트에서 **동일한 UI에 배치만 변경되는** 구성으로 반응형 웹 도입을 주도`,
-        `반응형 웹을 도입을 통해 **업무 환경 및 작업 효율을 2배로 개선**`,
+        'Modified the app to avoid saving files on the server. Users can directly download the Excel schedule from the browser.',
       ],
     },
     {
-      title: '웹 표준 / 접근성 고려 및 퍼블리싱',
+      title: 'Expandable for future features',
       detailList: [
-        `디자인된 웹 페이지를 마크업하여 웹 표준을 준수하고 웹 접근성을 고려하며 진행`,
-        `요구사항에 따라 \`slick slider\`와 같은 외부 라이브러리를 활용해 동적인 화면을 보여 줌`,
-        `간단한 토글 버튼과 같은 작업에는 \`jQuery\`를 활용해 구현`,
+        'Designed the app structure so it can be expanded to include night shifts, multiple departments, or REST API integration in the future.',
       ],
     },
   ],

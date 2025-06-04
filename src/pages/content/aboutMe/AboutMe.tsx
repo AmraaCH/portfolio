@@ -5,13 +5,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import StackIcon from '../../../components/atoms/tools/ToolIcon';
 import { StackData } from '../../../data/introData';
-import ReviewDetail from '../../detail/ReviewDetail';
 import { positionActions } from '../../../store/position-slice';
 import { isMobile } from '../../../utils/isMobile';
 import ScrollAni from '../../../styles/ScrollAni';
 import useScrollAnimation from '../../../hooks/useScrollAnimation';
 import LeftWrap from '../../../components/aboutMe/LeftWrap';
-import InterviewWrap from '../../../components/aboutMe/InterviewWrap';
 
 const IntroComponent = tw.main`
   relative
@@ -112,13 +110,11 @@ function AboutMe() {
 
   return (
     <motion.div ref={moScrollRef}>
-      <ReviewDetail />
       <IntroComponent id='aboutme'>
         <SubJectTit>About me</SubJectTit>
         <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef}>
           <Content>
             <LeftWrap />
-            <InterviewWrap />
             <Stacks>
               <Tit>Skill & Tools</Tit>
               <StackWrap>

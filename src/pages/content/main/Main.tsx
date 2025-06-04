@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { isMobile } from '../../../utils/isMobile';
-import myImg from '../../../assets/images/jieun_img.webp';
+import myImg from '../../../assets/images/my_img.webp';
 import SocialLinkList from '../../../components/main/SocialList';
 import ScrollArrow from '../../../components/main/ScrollArrow';
 import InfoWrap from '../../../components/main/InfoWrap';
@@ -21,7 +21,7 @@ function Main() {
   const isPosition = useSelector((state: RootState) => state.position.isPosition);
   const ismobile = isMobile ? 'true' : 'false';
 
-  // 모바일 환경에서 높이 딱 맞춰 나오도록
+
   useEffect(() => {
     if (isMobile) {
       vhRef.current = window.innerHeight * 0.01;
@@ -29,7 +29,7 @@ function Main() {
     }
   }, []);
 
-  // 애니메이션이 이루어 지는 동안에는 스크롤 금지, 메인 화면에서만 동작 되도록
+ 
   useEffect(() => {
     const mainSection = mainRef.current?.getBoundingClientRect();
     if (mainSection?.top === 0) {
@@ -71,8 +71,9 @@ function Main() {
           transition={{ ...ANI_TRANSITION, delay: 3 }}
           src={myImg}
           ismobile={ismobile}
-          alt='최지은 인물 사진'
+          alt='Portrait Photo'
           loading='lazy'
+          className='w-[800px] md:w-[800px] h-auto rounded-full cursor-pointer'
         />
 
         <InfoWrap delay={3} />

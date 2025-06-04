@@ -42,13 +42,13 @@ function TextWrap() {
           animate={{ ...OPACITY_1, y: WINDOW_HEIGHT }}
           transition={ANI_TRANSITION}
         >
-          프론트엔드 개발자 <StTxt>최지은</StTxt>입니다.
+          Hello, I'm <StTxt> Amraa </StTxt>!
           <BgText>
             <AnimationP
               initial={{ y: 150 }}
               animate={{ ...Y_0 }}
               transition={{ ...ANI_TRANSITION, delay: 1 }}
-            >Front-End</AnimationP>
+            >Full-Stack</AnimationP>
           </BgText>
         </MainTitle>
       </IntroAnimationDiv>
@@ -58,14 +58,14 @@ function TextWrap() {
         animate={{ ...OPACITY_1, ...Y_P10 }}
         transition={{ ...ANI_TRANSITION, delay: 3 }}
       >
-        사용자를 생각하는 <BoldTxt>역지사지</BoldTxt> 마인드,
+        A developer who values <BoldTxt>empathy</BoldTxt> for users,
       </MainSubText>
       <MainSubText
         initial={{ ...OPACITY_0, ...Y_0 }}
         animate={{ ...OPACITY_1, ...Y_P10 }}
         transition={{ ...ANI_TRANSITION, delay: 3.5 }}
       >
-        포기하지 않고 <BoldTxt>책임감</BoldTxt>있게 일하는 개발자입니다.
+        and works with <BoldTxt>responsibility</BoldTxt> and persistence.
       </MainSubText>
     </TxtBox >
   )

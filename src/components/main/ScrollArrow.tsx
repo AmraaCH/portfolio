@@ -17,7 +17,7 @@ export const ScrollArrowBox = tw(motion.div)`
 
   animate-bounce
 `;
-
+//Sum
 const ARROW_STYLES = { width: '25', height: '18', color: '#fff', direction: 'M26 2L14 14L2 2' }
 
 function ScrollArrow({ delay }: DelayT) {

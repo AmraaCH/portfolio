@@ -44,14 +44,14 @@ const LeftWrap = () => {
   return (
     <LeftContainer>
       <FlexBox>
-        <Img src={isImgChange ? myImgImOn : myImgIm} loading='lazy' alt="이모지 이미지" />
+        <Img src={isImgChange ? myImgImOn : myImgIm} loading='lazy' alt="Emoji image" />
         <TagTxtWrap>
           {aboutMetags.map((tag, idx) => (
             <TagText key={idx} tag={tag.name} />
           ))}
         </TagTxtWrap>
       </FlexBox>
-      <ShowReviewBtn handelImgChange={handelImgChange}>팀원 리뷰 보기</ShowReviewBtn>
+      <ShowReviewBtn handelImgChange={handelImgChange}>Who I Am</ShowReviewBtn>
     </LeftContainer>
   );
 };

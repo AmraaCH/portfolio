@@ -7,13 +7,13 @@ export const size = {
 };
 
 export const theme: themeT = {
-  mainColorBlack: '#232323',
+  mainColorBlack: '#AFCBFF',
   mainColorGray: '#EFEFF1',
   darkGray: '#0C0C0C',
   lightGray: '#373737',
   superLightGray: '#F1F2F5',
-  white: '#fff',
-  black: '#000',
+  white: '#AFCBFF',
+  black: '#AFCBFF',
 };
 
 export default theme;

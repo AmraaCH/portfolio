@@ -30,7 +30,7 @@ export const Img = tw.img`
 function StackIcon({ stack, width }: StackIconProps) {
   return (
     <IconBox width={width}>
-      <Img src={`${ICON_URL}${stack}.svg`} alt={`${stack}`} loading='lazy' />
+      <Img src={`${ICON_URL}${stack}.png`} alt={`${stack}`} loading='lazy' />
     </IconBox>
   )
 }
