@@ -46,47 +46,47 @@ const SubJectTit = tw.h2`
   max-lg:w-full
 `;
 
-const Tit = tw.h3`
-  text-4xl
-  font-black
-  text-superLightGray
-  pb-[2rem]
-`;
+// const Tit = tw.h3`
+//   text-4xl
+//   font-black
+//   text-superLightGray
+//   pb-[2rem]
+// `;
 
-const SubTit = tw.h5`
-  text-2xl
-  font-bold
-  pb-6
-`;
+// const SubTit = tw.h5`
+//   text-2xl
+//   font-bold
+//   pb-6
+// `;
 
 
-const StackSpacing = tw.div`
-  flex
-  gap-3
-`
+// const StackSpacing = tw.div`
+//   flex
+//   gap-3
+// `
 
-const Stacks = tw(StackSpacing)`
-  w-full
-  flex-col
-`;
+// const Stacks = tw(StackSpacing)`
+//   w-full
+//   flex-col
+// `;
 
-const StackWrap = tw.div`
-  grid 
-  grid-cols-3 
-  gap-4
+// const StackWrap = tw.div`
+//   grid 
+//   grid-cols-3 
+//   gap-4
 
-  max-md:grid-cols-1  
-`;
+//   max-md:grid-cols-1  
+// `;
 
-const StackBox = tw.div`
-`;
+// const StackBox = tw.div`
+// `;
 
-const StackIcons = tw.div`
-  grid
-  grid-cols-4
-  gap-1
-  w-full
-`;
+// const StackIcons = tw.div`
+//   grid
+//   grid-cols-4
+//   gap-1
+//   w-full
+// `;
 
 
 function AboutMe() {

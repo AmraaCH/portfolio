@@ -33,12 +33,16 @@ export const SkillButton = tw.button`
   hover:after:scale-x-[1.06]
 `;
 
-export const BtnTxt = tw.span`
+interface BtnTxtProps {
+  $active?: boolean;
+}
+
+export const BtnTxt = tw.span<BtnTxtProps>`
   relative
   z-[2]
-  text-mainBlack
   font-bold
   text-sm
+  ${({ $active }) => ($active ? 'text-blue-600' : 'text-mainBlack')}
 `;
 
 export const ArrowWrap = tw.span`
@@ -50,7 +54,7 @@ export const ArrowWrap = tw.span`
 interface SkillBtnProps {
   children: React.ReactNode;
   handelImgChange?: () => void;
-  onClick?: () => void;  // 추가
+  onClick?: () => void;
 }
 
 function SkillBtn({ children, handelImgChange, onClick }: SkillBtnProps) {
@@ -58,25 +62,20 @@ function SkillBtn({ children, handelImgChange, onClick }: SkillBtnProps) {
 
   const toggleSkills = () => {
     setShowSkills(prev => !prev);
-    if (onClick) onClick();  // 외부 onClick 호출
+    if (onClick) onClick();
   };
 
   return (
-    <>
-      <SkillButton
-        onMouseEnter={handelImgChange}
-        onMouseLeave={handelImgChange}
-        onClick={toggleSkills}
-      >
-        <BtnTxt>{children}</BtnTxt>
-        <ArrowWrap>
-          <IcSkill
-            width={'20'}
-            height={'20'}
-            />
-        </ArrowWrap>
-      </SkillButton>
-    </>
+    <SkillButton
+      onMouseEnter={handelImgChange}
+      onMouseLeave={handelImgChange}
+      onClick={toggleSkills}
+    >
+      <BtnTxt $active={showSkills}>{children}</BtnTxt>
+      <ArrowWrap>
+        <IcSkill width="20" height="20" />
+      </ArrowWrap>
+    </SkillButton>
   );
 }
 

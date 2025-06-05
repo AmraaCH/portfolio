@@ -13,8 +13,7 @@ import ProjectImgCard from '../../components/cards/ProjectImgCard';
 import ImgDetailModal from '../../components/modal/ImgDetailModal';
 import { projectDetailData } from '../../data/content/projecsDetailDatas/projectDetailData';
 import Modal from '../../components/modal/Modal';
-import useModal from '../../hooks/useModal';
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 type ProjectDataProps = {
