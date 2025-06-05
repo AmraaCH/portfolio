@@ -52,9 +52,7 @@ function Finish() {
             </MainTitle>
 
             <MainSubText>
-              Passionate about learning new tools and creating systems<br />
-               that improve workflow and user experience.
-              
+              Feel free to contact me if you liked my work.
             </MainSubText>
             <SocialLinkList />
           </TextWrap>

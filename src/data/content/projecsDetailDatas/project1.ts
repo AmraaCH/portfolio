@@ -1,6 +1,6 @@
 export const project1 = {
   name: 'Dowajo (Hospital Nurse Assistant System)',
-  pointcolor: 'before:bg-[#7c29a7]',
+  pointcolor: 'before:bg-[#a8d5ba]',
   title: 'Dowajo (Hospital Nurse Assistant System)',
   subtext:
     'A capstone design project aimed at improving nurse efficiency and patient safety in hospitals using the integrated nursing care service. Patients can make specific requests via a bedside touchscreen tablet, and nurses receive these requests in real-time through a mobile app. The system helps nurses distinguish between urgent and non-urgent calls, reducing unnecessary movement and improving responsiveness.',

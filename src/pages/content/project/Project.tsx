@@ -11,16 +11,19 @@ import { tabMenuList } from '../../../utils/constant/constant';
 
 const ProjectComponent = tw.section`
   grid
-  grid-cols-4
+  grid-cols-2
   grid-row-3
-  gap-4
-  pt-[3rem]
-  h-auto
+  gap-2      /* gap 4 → 2 */
+  pt-[1.5rem]  /* 3rem → 1.5rem */
+  mt-[1.5rem]  /* 3rem → 1.5rem */
 
-  max-md:pt-[3rem]
+  max-md:pt-[2.5rem]  /* 5rem → 2.5rem */
+  max-lg:h-auto
   max-lg:grid-cols-1
-  max-xl:grid-cols-2  
-  max-2xl:grid-cols-3
+  max-xl:grid-cols-2
+  max-2xl:h-screen
+
+
 `;
 
 const Container = tw.article`

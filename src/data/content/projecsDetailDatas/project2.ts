@@ -1,6 +1,6 @@
 export const project2 = {
   name: 'shift-scheduler',
-  pointcolor: 'before:bg-[#4a90e2]',
+  pointcolor: 'before:bg-[#a8d5ba]',
   title: 'Shift Scheduler Web App',
   subtext:
     'A web-based scheduling tool tailored for Oyu Tolgoi\'s employee shift management. The app automatically generates monthly work schedules based on uploaded Excel files. It considers factors such as employee availability, paid leave, and fairness in shift distribution.',
