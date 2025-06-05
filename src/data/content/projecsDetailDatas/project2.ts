@@ -27,19 +27,19 @@ export const project2 = {
     },
   ],
   featinfo: [],
-  images: [
+  detailimginfo: [
     {
-      url: 'assets/img/project2.png',
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project2.png',
       caption:
         '① Home screen — users can drag and drop an Excel file containing employee shift data.',
     },
     {
-      url: 'assets/img/project2(1).png',
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project2(1).png',
       caption:
         '② After file upload — if successful, a confirmation message appears. If not, an error is shown. Then, the user selects year/month and clicks "Generate Shift Schedule".',
     },
     {
-      url: 'assets/img/project2(2).png',
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project2(2).png',
       caption:
         '③ Generated Schedule — the monthly shift schedule is displayed in Excel format. Users can click "Download Excel File" to save it.',
     },

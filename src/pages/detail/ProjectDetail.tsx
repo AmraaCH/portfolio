@@ -260,8 +260,8 @@ function ProjectDetail() {
 
                 <PWrap>
                   <PTitle>
-                    🛠️ 사용 기술 및 언어
-                    <PSubText>클릭 시 세부 내용을 확인 할  수 있습니다.</PSubText>
+                    🛠️ Tools & Languages
+                    <PSubText>Click to see more details.</PSubText>
                   </PTitle>
                   <Toggles>
                     {
@@ -279,7 +279,7 @@ function ProjectDetail() {
 
                 <PWrap>
                   <PTitle>
-                    ✨ 작업 기여도
+                    ✨ In more detail
                   </PTitle>
                   <Toggles>
                     {
@@ -320,7 +320,7 @@ function ProjectDetail() {
                   projectDetail.insight && projectDetail.insight.length !== 0 && (
                     <PWrap>
                       <PTitle>
-                        ☕️ 회고
+                        ☕️ Review
                       </PTitle>
                       <Toggles>
                         {
@@ -342,8 +342,8 @@ function ProjectDetail() {
                   projectDetail.detailimginfo && (
                     <PWrap>
                       <PTitle>
-                        💻 작업 화면
-                        <PSubText>이미지 클릭 시 크게 볼 수 있습니다. (작업화면이 현재와 다를 수 있습니다.)<br />* 저작권 이슈가 있는 경우 첨부하지 않았습니다.</PSubText>
+                        💻 Main interface
+                        <PSubText>Click the image to view it in full size. (The interface may differ from the current version)</PSubText>
                       </PTitle>
 
                       <ImgContList>
@@ -351,16 +351,23 @@ function ProjectDetail() {
                         {imgModal && (<ImgDetailModal imgUrl={projectDetail.detailimginfo && projectDetail.detailimginfo[targetId].imgurl} />)}
 
                         {
-                          projectDetail.detailimginfo?.map((el, idx) => (
-                            <ProjectImgCard
-                              key={idx}
-                              id={idx}
-                              imgurl={el.imgurl}
-                              subject={el.subject}
-                              toggleImgModal={toggleImgModal}
-                            />
-                          ))
-                        }
+    projectDetail.detailimginfo?.map((el, idx) => (
+    <div key={idx}>
+      <ProjectImgCard
+        id={idx}
+        imgurl={el.imgurl}
+        subject={el.subject ?? "" }
+        toggleImgModal={toggleImgModal}
+      />
+      {el.caption && (
+        <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '0.5rem' }}>
+          {el.caption}
+        </p>
+      )}
+    </div>
+  ))
+}
+
                       </ImgContList>
                     </PWrap>
                   )

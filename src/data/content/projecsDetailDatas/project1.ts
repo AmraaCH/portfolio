@@ -25,6 +25,44 @@ export const project1 = {
   ],
 
   featinfo: [],
+  detailimginfo: [
+    {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1.png',
+      caption: 'Home screen, Sign-up page, ID duplication check during sign-up',
+    },
+    {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(1).png',
+    },
+    {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(2).png',
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(3).png',
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(4).png',
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(5).png',
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(6).png',
+        
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(7).png',
+      
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(8).png',
+      
+    },
+        {
+      imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(9).png',
+      
+    },
+
+  ],
 
   parts: [
     {

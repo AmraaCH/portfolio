@@ -51,7 +51,8 @@ export type ProjectDetailDataT = {
   imgurl?: string;
   detailimginfo?: {
     imgurl: string;
-    subject: string;
+    subject?: string;
+    caption?: string;
   }[];
   giturl?: string;
   depoloyurl?: string;
