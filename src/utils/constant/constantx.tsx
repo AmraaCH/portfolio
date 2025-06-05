@@ -7,12 +7,12 @@ export const quickBtnsData = [
     id: 1,
     datatooltip: EMAILL,
     tooltiptype: 'left',
-    icon: <MailSentBtn name='Copy email' />
+    icon: <MailSentBtn name='이메일 주소 복사' />
   },
   {
     id: 2,
-    datatooltip: 'Go to Top',
+    datatooltip: '위로가기',
     tooltiptype: 'left',
-    icon: <GoTopBtn name='Go to Top' />
+    icon: <GoTopBtn name='위로가기' />
   }
 ]

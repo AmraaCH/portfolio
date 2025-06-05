@@ -32,33 +32,42 @@ export const project1 = {
     },
     {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(1).png',
+      caption: ' Login page, Login success notification appears upon successful login, Failure notification appears upon unsuccessful login attempt ',
     },
     {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(2).png',
+      caption: 'Patient lookup page, alert message shown when patient ID is incorrect, patient information page appears on success.',
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(3).png',
+      caption: 'Patient-specific page showing patient information, with menus on the left for injections, medication administration, macro settings (patient pad), and notification overview.',
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(4).png',
+      caption: 'Medication notification add feature screen. Users input medication photo, day of the week, and time to take it. An alert message appears if any information is missing.',
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(5).png',
+      caption: 'Medication screen, medications are categorized by morning, lunch, and dinner. Clicking on a medication brings up options to edit, delete, or close.',
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(6).png',
+      caption: 'Notification receiving screen',
         
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(7).png',
+      caption: 'Record tab screen, when marked as taken, the medication is removed from the remaining schedule.',
       
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(8).png',
+      caption: 'Injection page, injection addition page.',
       
     },
         {
       imgurl: 'https://raw.githubusercontent.com/AmraaCH/portfolio/main/src/assets/images/project1(9).png',
+      caption: 'The medication alert feature is very similar. The difference is that there is a timer function when administering IV fluids.',
       
     },
 

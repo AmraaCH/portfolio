@@ -14,6 +14,8 @@ import ImgDetailModal from '../../components/modal/ImgDetailModal';
 import { projectDetailData } from '../../data/content/projecsDetailDatas/projectDetailData';
 import Modal from '../../components/modal/Modal';
 import useModal from '../../hooks/useModal';
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 type ProjectDataProps = {
   pointcolor?: string;
@@ -193,9 +195,9 @@ export const ImgContList = tw.div`
 `;
 
 function ProjectDetail() {
-  const { closeModal } = useModal();
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { name } = useParams();
   const projectDetail = projectDetailData.find((project) => project.name === name);
 
@@ -207,6 +209,10 @@ function ProjectDetail() {
     dispatch(overlayActions.targetId(e.currentTarget.id));
   };
 
+  const handleClose = () => {
+    navigate(-1); // 이전 페이지로 이동
+  };
+
   return (
     <>
       {projectDetail ? (
@@ -215,7 +221,7 @@ function ProjectDetail() {
             <DetailWrap imgurl={projectDetail.imgurl}>
 
               <Btns>
-                <CloseBtn closeModal={closeModal} />
+                <CloseBtn closeModal={handleClose} />
                 <ContBtns>
                   {projectDetail.giturl && <LinkBtn name='github_bk' giturl={projectDetail.giturl} text='GitHub' />}
                   {projectDetail.depoloyurl && <LinkBtn name='link' depoloyurl={projectDetail.depoloyurl} text='배포 링크' />}

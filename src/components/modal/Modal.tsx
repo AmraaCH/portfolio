@@ -16,6 +16,7 @@ const ModalContainer = tw.article`
  `
 
 const Modal = ({ children }: { children: ReactNode }) => {
+  
   const { closeModal } = useModal();
 
   return (

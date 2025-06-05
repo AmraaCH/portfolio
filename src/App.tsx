@@ -6,7 +6,7 @@ import Finish from './pages/content/finish/Finish';
 import ProjectDetail from './pages/detail/ProjectDetail';
 import SkillDetail from './pages/detail/SkillDetail';
 import QuickBtns from './components/quickBtns/QuickBtns';
-import ScrollToTop from './hooks/useScrolllToTop';
+import ScrollToTop from './hooks/useScrollToTop';
 export default function App() {
   return (
     <>

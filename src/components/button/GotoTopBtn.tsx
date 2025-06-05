@@ -1,4 +1,4 @@
-import IcLineArrow from '../../assets/icons/IcSkill';
+import IcLineArrow from '../../assets/icons/IcLinekArrow';
 import { ButtonNameT } from '../../types/type';
 import { WhiteCricleBtn } from './Button.styled';
 

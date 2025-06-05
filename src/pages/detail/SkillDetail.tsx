@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import tw from 'tailwind-styled-components';
-import CloseBtn from '../../components/button/CloseBtn'; // 닫기 버튼 컴포넌트 경로 맞게 수정하세요
+import CloseBtn from '../../components/button/CloseBtn'; 
 import SkillCard from '../../components/cards/SkillCard';
 import { skillData } from '../../data/content/skillData';
 
