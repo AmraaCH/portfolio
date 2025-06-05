@@ -4,7 +4,7 @@ export const project2 = {
   title: 'Shift Scheduler Web App',
   subtext:
     'A web-based scheduling tool tailored for Oyu Tolgoi\'s employee shift management. The app automatically generates monthly work schedules based on uploaded Excel files. It considers factors such as employee availability, paid leave, and fairness in shift distribution.',
-  data: '2025 - 1 month',
+  data: '2025 - 6 month',
   team: 'Solo project',
   tag: ['automation', 'Streamlit', 'Python', 'Excel'],
   depoloyurl: '', // Add if deployed online
@@ -27,6 +27,23 @@ export const project2 = {
     },
   ],
   featinfo: [],
+  images: [
+    {
+      url: 'assets/img/project2.png',
+      caption:
+        '① Home screen — users can drag and drop an Excel file containing employee shift data.',
+    },
+    {
+      url: 'assets/img/project2(1).png',
+      caption:
+        '② After file upload — if successful, a confirmation message appears. If not, an error is shown. Then, the user selects year/month and clicks "Generate Shift Schedule".',
+    },
+    {
+      url: 'assets/img/project2(2).png',
+      caption:
+        '③ Generated Schedule — the monthly shift schedule is displayed in Excel format. Users can click "Download Excel File" to save it.',
+    },
+  ],
   parts: [
     {
       title: 'Automated shift scheduling based on Excel input',
