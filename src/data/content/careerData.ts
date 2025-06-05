@@ -4,10 +4,9 @@ export const careerData = [
     title: 'Office of International Cooperation, Keimyung University',
     role: '@ Student Assistant',
     infos: [
-      'Designed and developed landing pages and web layouts.',
-      'Published responsive and accessible websites using HTML & CSS.',
-      'Collaborated with planners, frontend developers, and clients for project improvements.',
-      'Managed and maintained multiple corporate websites.',
+      'Provided administrative support for international cooperation projects and events.',
+      'Assisted in coordinating communication between international students and university staff.',
+      'Organized orientation sessions and helped new international students adapt smoothly.',
     ],
     stacks: [],
   },
