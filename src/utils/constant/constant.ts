@@ -1,4 +1,5 @@
-export const ICON_URL = 'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_';
+export const ICON_URL = 'https://raw.githubusercontent.com/AmraaCH/portfolio/c33da129596bae5fee072f03b2694619f33f6548/src/assets/icons/icon_';
+
 
 export const UPDATE_DATA = '25. 6. 5';
 export const EMAILL = 'amraachin@gmail.com';

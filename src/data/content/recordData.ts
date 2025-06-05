@@ -8,6 +8,6 @@ export const recordData = [
       'Learned programming languages including C, Python, and SQL for database management.',
       'Practiced building basic web pages using HTML and CSS.',
     ],
-    stacks: ['Python', 'HTML', 'CSS', 'C family languages', 'AI', 'SQL']
+    stacks: ['python', 'html', 'css', 'c++', 'ai', 'sql']
   },
 ];

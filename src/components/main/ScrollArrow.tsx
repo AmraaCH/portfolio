@@ -1,6 +1,6 @@
 import tw from 'tailwind-styled-components';
 import { motion } from 'framer-motion';
-import IcLineArrow from '../../assets/icons/IcLinekArrow';
+import IcLineArrow from '../../assets/icons/IcSkill';
 import { ANI_TRANSITION, OPACITY_0, OPACITY_1, Y_0, Y_M20 } from '../../utils/constant/constant';
 import { DelayT } from '../../types/type';
 

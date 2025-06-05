@@ -3,8 +3,6 @@ import { useDispatch } from 'react-redux';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import StackIcon from '../../../components/atoms/tools/ToolIcon';
-import { StackData } from '../../../data/introData';
 import { positionActions } from '../../../store/position-slice';
 import { isMobile } from '../../../utils/isMobile';
 import ScrollAni from '../../../styles/ScrollAni';
@@ -115,24 +113,6 @@ function AboutMe() {
         <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef}>
           <Content>
             <LeftWrap />
-            <Stacks>
-              <Tit>Skill & Tools</Tit>
-              <StackWrap>
-                {
-                  //* key = 제목, stacks = 기술 스택
-                  Object.entries(StackData.stack).map(([key, stacks], idx) => (
-                    <StackBox key={idx}>
-                      <SubTit>{key}</SubTit>
-                      <StackIcons>
-                        {stacks.map((stack) => (
-                          <StackIcon key={stack} stack={stack} width={`w-[calc(100%-5%)]`} />
-                        ))}
-                      </StackIcons>
-                    </StackBox>
-                  ))
-                }
-              </StackWrap>
-            </Stacks>
           </Content>
 
         </ScrollAni>
